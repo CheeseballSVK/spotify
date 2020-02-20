@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0">
+            <children>
+                <TableView fx:id="tableView" layoutX="56.0" layoutY="148.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="288.0">
+                    <columns>
+                        <TableColumn fx:id="column_id" prefWidth="75.0" text="id" />
+                        <TableColumn fx:id="column_name" prefWidth="171.0" text="name" />
+                        <TableColumn fx:id="column_song" minWidth="0.0" prefWidth="153.0" text="song" />
+                    </columns>
+                </TableView>
+            </children></AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
