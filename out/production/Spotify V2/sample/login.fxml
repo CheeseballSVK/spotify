@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLogin">
+   <children>
+      <Button layoutX="269.0" layoutY="139.0" mnemonicParsing="false" onAction="#login" text="LOG IN !" />
+      <PasswordField fx:id="password" layoutX="227.0" layoutY="100.0" />
+      <TextField fx:id="username" layoutX="227.0" layoutY="59.0" />
+      <Label fx:id="label" layoutX="259.0" layoutY="26.0" text="Login to spotify" />
+       <Label fx:id="isConnected" layoutX="418.0" layoutY="369.0" prefHeight="17.0" prefWidth="153.0" />
+      <Label layoutX="156.0" layoutY="63.0" text="username" />
+      <Label layoutX="156.0" layoutY="104.0" text="password" />
+      <Label layoutX="246.0" layoutY="200.0" text="Dont Have account ?" />
+      <Label layoutX="247.0" layoutY="229.0" />
+      <Button layoutX="274.0" layoutY="274.0" mnemonicParsing="false" onAction="#register" text="Register" />
+   </children>
+</AnchorPane>
