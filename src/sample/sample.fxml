@@ -6,14 +6,14 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <TableView fx:id="tableView" layoutX="104.0" layoutY="49.0" prefHeight="200.0" prefWidth="392.0">
+      <TableView fx:id="tableView" layoutX="104.0" layoutY="49.0" onMouseClicked="#tablenameonclick" prefHeight="200.0" prefWidth="392.0">
         <columns>
           <TableColumn fx:id="column_id" minWidth="0.0" prefWidth="0.0" text="id" />
-          <TableColumn fx:id="column_name" prefWidth="191.0" text="name" />
-            <TableColumn fx:id="column_song" prefWidth="200.0" text="song" />
+          <TableColumn fx:id="column_name" prefWidth="196.0" text="name" />
+            <TableColumn fx:id="column_song" prefWidth="195.0" text="song" />
         </columns>
       </TableView>
-      <Button layoutX="306.0" layoutY="262.0" mnemonicParsing="false" onAction="#changeuser" text="Change Username and Password" />
+      <Button layoutX="103.0" layoutY="259.0" mnemonicParsing="false" onAction="#changeuser" text="Change Username and Password" />
       <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#backtologin" text="Back" />
       <Button layoutX="321.0" layoutY="302.0" mnemonicParsing="false" onAction="#addmusic" text="Add or delete music to my list" />
       <Button layoutX="104.0" layoutY="302.0" mnemonicParsing="false" onAction="#feelsokeyman" text="FeelsOkeyMan" />
@@ -77,5 +77,6 @@
          </image>
       </ImageView>
       <Button layoutX="229.0" layoutY="302.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+      <Label fx:id="errormess" layoutX="23.0" layoutY="358.0" prefHeight="37.0" prefWidth="555.0" />
    </children>
 </AnchorPane>

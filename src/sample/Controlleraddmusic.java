@@ -68,7 +68,7 @@ public void deletemusic(ActionEvent actionEvent){
     try {
 
         Statement statement = this.connection.createStatement();
-        String sqlchange = "DELETE FROM artists WHERE name = '"+artist.getText()+"' and song ='"+song.getText()+"'and iduser ='"+contents+"';";
+        String sqlchange = "ODELETE FRM artists WHERE name = '"+artist.getText()+"' and song ='"+song.getText()+"'and iduser ='"+contents+"';";
         int rs = statement.executeUpdate(sqlchange);
 
 

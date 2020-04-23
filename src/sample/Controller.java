@@ -16,6 +16,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.media.AudioClip;
 import javafx.stage.Stage;
 
+import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -46,6 +47,7 @@ public class Controller implements Initializable {
     public ImageView pepe111111111;
     public ImageView pepe1111111111;
     public ImageView pepe11111111111;
+    public Label errormess;
 
     ConnectionClass cn = new ConnectionClass();
     Connection connection = cn.getConnection();
@@ -202,7 +204,20 @@ public class Controller implements Initializable {
 
 
         }
+        public void tablenameonclick() {
+            Skladatelia person = tableView.getSelectionModel().getSelectedItem();
+            String name = person.getName();
+            System.out.println(name);
 
-    }
+            if(name.equals("Viktor Sheen")){
+                errormess.setText("Viktor Sheen (* 15. srpna 1993 Kazachstán) je český rapper pocházející z Kazachstánu.");
+            }
+            if(name.equals("Machine Gun Kelly")){
+                errormess.setText("Colson Baker (* 22. dubna 1990), známější pod pseudonymem MGK nebo Machine Gun Kelly, je americký rapper z Clevelandu v Ohiu. ");
+            }
+            }
+        }
+
+
 
 
